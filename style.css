@@ -54,6 +54,10 @@ body.borderless .nav-wrapper.scrolled {
     top: 0;
 }
 
+.shift-page-up {
+  padding-top: 10% !important;
+}
+
 #master-wrapper {
     overflow: hidden;
     background-color: #fff;
@@ -82,8 +86,27 @@ body.borderless .nav-wrapper.scrolled {
     transition: all 0.3s ease-in-out;
 }
 
+@font-face {
+    font-family: trixie;
+    src: url('assets/font-awesome/fonts/trixie-plain.woff');
+}
+.stagger-1 {
+  text-align: right;
+  font-size: 2em;
+  font-family: trixie, plain;
+  position: relative;
+}
+
+.stagger-1 a {
+  color: black;
+}
+
+.stagger-1 a:hover {
+  text-decoration: none;
+}
+
 a, a:hover {
-    color: #50ADBB;
+    /*color: #50ADBB;*/
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -155,7 +178,7 @@ span.x4:before,i.x4:before {
 }
 
 .nopaddingtop {
-    padding-top: 0 !important;
+    padding-top: 0;
 }
 
 .nopaddingbottom {
@@ -510,7 +533,7 @@ span.x4:before,i.x4:before {
 
 .nav-wrapper {
     background-color: transparent;
-    position: relative;
+    position: absolute;
     width: 100%;
     z-index: 10;
     background-color: transparent;
@@ -522,7 +545,18 @@ span.x4:before,i.x4:before {
     position: fixed;
     z-index: 99999;
     top: 7px;
+
 }
+
+.nav-wrapper.scrolled .logo {
+    max-height: 50px;
+}
+
+.nav-wrapper.scrolled .menu-items {
+    display: inline-block;
+    padding-left: 5%;
+}
+
 .nav-wrapper.scrolled .nav-inner {
     background-color: transparent;
 }
@@ -1599,9 +1633,9 @@ a#back-to-top.show {
         transform: translate3d(-0px,0,0);
     }
     .pushy img.logo {
-        max-height: 29px;
+        /*max-height: 29px;*/
         margin-top: 20px;
-        margin: 70px auto 40px;
+        /*margin: 70px auto 40px;*/
     }
     .special-max-width {
         max-width: 1300px;
