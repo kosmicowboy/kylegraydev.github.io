@@ -961,7 +961,7 @@ textarea.form-control {
 }
 
 /*-----------------------------------------------------------------------------------*/
-/* ECTIONS
+/* SECTIONS
 /*-----------------------------------------------------------------------------------*/
 section, header#home {
     overflow: hidden;
@@ -981,6 +981,15 @@ section, header#home {
     text-transform: lowercase;
     letter-spacing: 1px;
     opacity: 1;
+}
+
+.affiliation {
+
+  /*overflow: hidden;*/
+}
+
+.affiliation img{
+    margin: auto;
 }
 
 
